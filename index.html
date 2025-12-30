@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictionary SPA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Dictionary SPA</h1>
+    
+    <!-- Search Form -->
+    <form id="search-form" aria-label="Search for a word">
+      <input type="text" id="word-input" placeholder="Enter a word" aria-label="Word input">
+      <button type="submit">Search</button>
+    </form>
+    
+    <!-- Results Section -->
+    <section id="results" aria-live="polite">
+      <div id="word-title"></div>
+      <div id="phonetics"></div>
+      <div id="definitions"></div>
+      <div id="synonyms"></div>
+    </section>
+
+    <!-- Error messages -->
+    <div id="error-message" class="hidden" role="alert"></div>
+  </main>
+
+  <script src="dictionary.js"></script>
+</body>
+</html>
